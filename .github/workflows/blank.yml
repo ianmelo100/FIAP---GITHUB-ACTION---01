@@ -16,5 +16,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run a one-line script
-        run: Ola Primeiro projeto com GitHub Actions.
+        run: echo Olá Primeiro projeto com GitHub Actions.
 
