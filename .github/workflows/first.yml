@@ -1,0 +1,20 @@
+# Nome do WorkFlow
+name: Primeiro WorkFlow
+
+# Defini quando o WorkFlow será disparado
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ main ,Developer]
+
+# Definindo os jobs que o workflow executará 
+jobs:
+  job_01:
+    name: Executando job de teste
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4  
+
+      - name: Executando um comando simples
+        run: echo "Olá, Mundo !!! Primeiro job executado"
